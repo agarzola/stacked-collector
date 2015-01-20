@@ -22,6 +22,7 @@ describe('Batcher', function () {
     batchedUsers[0].should.be.an.instanceOf(Array).and.have.lengthOf(5)
     batchedUsers[1].should.be.an.instanceOf(Array).and.have.lengthOf(5)
     batchedUsers[2].should.be.an.instanceOf(Array).and.have.lengthOf(1)
+    batchedUsers.limit.should.equal(5)
 
     done()
   })
