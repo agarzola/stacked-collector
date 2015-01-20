@@ -1,6 +1,7 @@
 var should = require('should'),
     collector = require('../lib/collector'),
     batcher = require('../lib/batcher'),
+    cycler = require('../lib/cycler'),
     testUsers = require('./data/users'),
     userProcessor = require('../lib/userProcessor'),
     userArray, batchedUsers
@@ -25,5 +26,18 @@ describe('Batcher', function () {
     batchedUsers.limit.should.equal(5)
 
     done()
+  })
+})
+
+describe('Cycler', function () {
+  it('should fill the last batch with users from the top of the list', function (done) {
+    cycler(batchedUsers, userArray, function (err, lastBatch, updatedUsers) {
+      batchedUsers[batchedUsers.length - 1] = lastBatch
+
+      batchedUsers[2].should.be.an.instanceOf(Array).and.have.lengthOf(5)
+      updatedUsers.should.be.an.instanceOf(Array).and.have.lengthOf(7)
+
+      done()
+    })
   })
 })
