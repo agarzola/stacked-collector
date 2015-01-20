@@ -3,12 +3,12 @@ var should = require('should'),
     batcher = require('../lib/batcher'),
     cycler = require('../lib/cycler'),
     testUsers = require('./data/users'),
-    userProcessor = require('../lib/userProcessor'),
+    itemProcessor = require('../lib/itemProcessor'),
     userArray, batchedUsers
 
 describe('User Processor', function () {
   it('should return an array of users', function (done) {
-    userArray = userProcessor(testUsers)
+    userArray = itemProcessor(testUsers)
 
     userArray.should.be.an.instanceOf(Array).and.have.lengthOf(11)
     done()
