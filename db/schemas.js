@@ -28,6 +28,16 @@ var schema = {
 
     resetPasswordToken: String,
     resetPasswordExpires: Date
+  }),
+  cachedPosts: new mongoose.Schema({
+    userId: String,
+    last: {
+      timestamp: String,
+      twitter: String,
+      facebook: String,
+      instagram: String
+    },
+    posts: [ Object ]
   })
 }
 
