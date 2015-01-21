@@ -27,16 +27,3 @@ describe('Batcher', function () {
     done()
   })
 })
-
-describe('Cycler', function () {
-  it('should fill the last batch with users from the top of the list', function (done) {
-    cycler(batchedUsers, userArray, function (err, lastBatch, updatedUsers) {
-      batchedUsers[batchedUsers.length - 1] = lastBatch
-
-      batchedUsers[2].should.be.an.instanceOf(Array).and.have.lengthOf(5)
-      updatedUsers.should.be.an.instanceOf(Array).and.have.lengthOf(7)
-
-      done()
-    })
-  })
-})
