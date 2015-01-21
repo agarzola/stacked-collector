@@ -1,0 +1,84 @@
+[
+  {
+      "id": "54b592a9853862b8268e095f",
+      "email": "na@na.com",
+      "password": "$2a$05$oGaVPJ.j5mdVcIe0ZrFUV.3.n8CZgh6H2f2iIjZbfJOdZe1EOrKAG",
+      "profile": {
+          "picture": "https://instagramimages-a.akamaihd.net/profiles/profile_436702183_75sq_1372271329.jpg",
+          "website": "",
+          "location": "Nashville, TN",
+          "gender": "",
+          "name": "Jacob Greer"
+      },
+      "tokens": [
+          {
+              "kind": "twitter",
+              "accessToken": "485875301-tHrk5VTcDMAw0lQ24My8SYR2OdHKDEfOu5Wgx9EB",
+              "tokenSecret": "xH4YOfTUgMtbs6FELn7OOg0HQXthdx9Q09mR9ciSlFCMr"
+          },
+          {
+              "kind": "instagram",
+              "accessToken": "436702183.7d3d827.2e640be3756b43afa08d20cfe0ec058c"
+          }
+      ],
+      "__v": 6,
+      "account": "54b592a9853862b8268e095f",
+      "role": "owner",
+      "instagramDisplay": "thebleaufish",
+      "twitterDisplay": "StackedSports",
+      "twitter": "485875301",
+      "instagram": "436702183"
+  },
+  {
+      "id": "54b7149858b9aeb81f14fb04",
+      "facebookDisplay": "Beau Shaw",
+      "facebook": "10101407618034360",
+      "email": "techtbeau@gmail.com",
+      "profile": {
+          "picture": "https://graph.facebook.com/10101407618034360/picture?type=large",
+          "website": "",
+          "location": "East Nashville, Tennessee",
+          "gender": "male",
+          "name": "Beau Shaw"
+      },
+      "tokens": [
+          {
+              "accessToken": "CAALLRQ0AkkIBAMHHL31hGuIz19HJqU2LovpaNIeiZAK1kVooP1muSQAsLzBIYe8JYDdB8VNrGdUWBTbqwgjg05ZC3XWtyEdNyQP7HYNp6IfTZB8raGuy71ZAp5k8Br2xLDojyDxdNwTrLsilVPTGrg36thwMNVqMPpkI9hsDvrCj8opzL86fC1GZCr00z64d4g40lopSeSZB1cNGZCTpp1J",
+              "kind": "facebook"
+          }
+      ],
+      "__v": 15,
+      "account": "54b7149858b9aeb81f14fb04",
+      "role": "owner",
+      "policies": [
+          {
+              "$oid": "54bdc0e3f4fb2ce82ff3a6b5"
+          },
+          {
+              "$oid": "54bdc0b8f4fb2ce82ff3a6b4"
+          },
+          {
+              "$oid": "54bdcb87f4fb2ce82ff3a6b6"
+          },
+          {
+              "$oid": "54bdcf5bf4fb2ce82ff3a6b7"
+          }
+      ]
+  },
+  {
+      "id": "54b9a725f5febb8c0f97c05e",
+      "email": "nana@nana.com",
+      "password": "$2a$05$YR4SV1Trc9gauf1GJ8KnZOC/y9iJcgiOYdmwoiCblBFa42EHyovZm",
+      "profile": {
+          "picture": "",
+          "website": "",
+          "location": "",
+          "gender": "",
+          "name": "MJ"
+      },
+      "tokens": [],
+      "__v": 0,
+      "account": "54b9a725f5febb8c0f97c05e",
+      "role": "owner"
+  }
+]
