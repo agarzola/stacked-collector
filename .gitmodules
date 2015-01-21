@@ -1,0 +1,3 @@
+[submodule "lib/credentials"]
+	path = lib/credentials
+	url = git@bitbucket.org:aheggestad/stacked-credentials.git
