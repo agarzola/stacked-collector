@@ -38,6 +38,13 @@ var schema = {
       instagram: String
     },
     posts: { type: Array, default: [] }
+  }),
+  oAuthErrors: new mongoose.Schema({
+    userId: String,
+    last: {
+      timestamp: String
+    },
+    oautherrors: { type: Array, default: [] }
   })
 }
 
