@@ -35,7 +35,7 @@ module.exports = {
               favorited: false,
               retweeted: false,
               lang: 'en' } },
-        content: { text: 'Hm. I might need a slightly more exciting life, if those are the highlights.' },
+        content: { text: 'This should be near the top!' },
         permalink: 'https://twitter.com/ArneHeggestad/status/555732376815693824' }, 
       { postId: '556548177747542017',
         userId: 'foo',

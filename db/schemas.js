@@ -37,7 +37,7 @@ var schema = {
       facebook: String,
       instagram: String
     },
-    posts: [ Object ]
+    posts: { type: Array, default: [] }
   })
 }
 
