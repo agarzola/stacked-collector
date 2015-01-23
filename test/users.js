@@ -13,26 +13,25 @@ describe('User', function () {
   })
 
   it('should return an object with each user as a property with network tokens', function (done) {
-    Users.get(function (err, users) {
-      pooledUsers = Users.pool(users)
+    pooledUsers = Users.pool(arrayOfUsers)
 
-      pooledUsers.should.be.an.instanceOf(Object)
-      arrayOfUsers.forEach(function (user) {
-        if (user.tokens.length > 0) {
-          pooledUsers[user.id].should.be.an.instanceOf(Object)
-          user.tokens.forEach(function (token) {
-            pooledUsers[user.id][token.kind].should.be.an.instanceOf(Object)
-            pooledUsers[user.id][token.kind].userId.should.be.an.instanceOf(String)
-            Object.keys(token).forEach(function (tokenKey) {
-              if (tokenKey !== 'kind') {
-                pooledUsers[user.id][token.kind][tokenKey].should.be.an.instanceOf(String)
-              }
-            })
+    pooledUsers.should.be.an.instanceOf(Object)
+    arrayOfUsers.forEach(function (user) {
+      if (user.tokens.length > 0 && user.policies.length > 0) {
+        console.log('yup')
+        pooledUsers[user.id].should.be.an.instanceOf(Object)
+        user.tokens.forEach(function (token) {
+          pooledUsers[user.id][token.kind].should.be.an.instanceOf(Object)
+          pooledUsers[user.id][token.kind].userId.should.be.an.instanceOf(String)
+          Object.keys(token).forEach(function (tokenKey) {
+            if (tokenKey !== 'kind') {
+              pooledUsers[user.id][token.kind][tokenKey].should.be.an.instanceOf(String)
+            }
           })
-        }
-      })
-
-      done()
+        })
+      }
     })
+
+    done()
   })
 })

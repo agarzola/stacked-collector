@@ -27,7 +27,8 @@
       "instagramDisplay": "thebleaufish",
       "twitterDisplay": "StackedSports",
       "twitter": "485875301",
-      "instagram": "436702183"
+      "instagram": "436702183",
+      "policies": []
   },
   {
       "id": "54b7149858b9aeb81f14fb04",
@@ -79,6 +80,11 @@
       "tokens": [],
       "__v": 0,
       "account": "54b9a725f5febb8c0f97c05e",
-      "role": "owner"
+      "role": "owner",
+      "policies": [
+          {
+              "$oid": "54bdc0e3f4fb2ce82ff3a6b5"
+          }
+      ]
   }
 ]
