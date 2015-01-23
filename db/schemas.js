@@ -27,17 +27,28 @@ var schema = {
     },
 
     resetPasswordToken: String,
-    resetPasswordExpires: Date
-  }),
-  cachedPosts: new mongoose.Schema({
-    userId: String,
+    resetPasswordExpires: Date,
+    policies: Array,
+    // posts: [ { type: mongoose.Schema.ObjectId, ref: 'CachedPosts' } ],
     last: {
       timestamp: String,
       twitter: String,
       facebook: String,
       instagram: String
+    }
+  }),
+  cachedPosts: new mongoose.Schema({
+    userId: String,
+    source: {
+      network: String,
+      data: Object
     },
-    posts: { type: Array, default: [] }
+    content: {
+      text: String,
+      img: String
+    },
+    permalink: String,
+    timestamp: String
   }),
   oAuthErrors: new mongoose.Schema({
     userId: String,
