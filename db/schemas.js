@@ -50,12 +50,12 @@ var schema = {
     permalink: String,
     timestamp: String
   }),
-  oAuthErrors: new mongoose.Schema({
+  oauthIssues: new mongoose.Schema({
     userId: String,
     last: {
       timestamp: String
     },
-    oautherrors: { type: Array, default: [] }
+    oauthIssues: Object
   })
 }
 
