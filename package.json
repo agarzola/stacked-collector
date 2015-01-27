@@ -1,6 +1,6 @@
 {
   "name": "stacked-collector",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Create batches of users to submit to the scraper and cache posts returned by the scraper",
   "main": "index.js",
   "scripts": {
