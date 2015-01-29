@@ -29,7 +29,6 @@ var schema = {
     resetPasswordToken: String,
     resetPasswordExpires: Date,
     policies: Array,
-    // posts: [ { type: mongoose.Schema.ObjectId, ref: 'CachedPosts' } ],
     last: {
       timestamp: String,
       twitter: String,
