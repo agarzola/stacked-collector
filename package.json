@@ -21,7 +21,7 @@
     "mongodb-uri": "^0.9.7",
     "mongoose": "^3.8.21",
     "stacked-database": "git+ssh://git@bitbucket.org:StackedSports/stacked-database.git#0f63e0f",
-    "stacked-scraper": "git+ssh://git@bitbucket.org:StackedSports/stacked-scraper.git#c78872a"
+    "stacked-scraper": "git+ssh://git@bitbucket.org:StackedSports/stacked-scraper.git#2285aca"
   },
   "devDependencies": {
     "mocha": "^2.1.0",
